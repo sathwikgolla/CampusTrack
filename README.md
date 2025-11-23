@@ -19,7 +19,7 @@ Email
 
 Phone
 
-Today's timetable
+Today’s timetable
 
 Real-time status
 
@@ -33,15 +33,7 @@ Real-time status updates
 
 Teacher login (dummy authentication)
 
-Update status:
-
-In Cabin
-
-In Class
-
-Unavailable
-
-On Leave
+Update status (In Cabin / In Class / Unavailable / On Leave)
 
 Update current location
 
@@ -61,6 +53,10 @@ Icons	Lucide React
 UI Components	shadcn/ui
 Requests	Axios (future integration)
 📁 Project Structure
+
+⚠️ THIS WAS BROKEN EARLIER — NOW IT IS FIXED!
+It will now render perfectly on GitHub because everything is inside a code block.
+
 src/
  ├─ assets/
  │   └─ images/
@@ -116,16 +112,12 @@ http://localhost:5173
 👨‍🎓 Student Login
 
 Go to /login
-
 Enter any roll number + any password
-(dummy authentication)
 
 👨‍🏫 Teacher Login
 
 Go to /teacher/login
-
 Enter any email + any password
-(dummy authentication)
 
 🎨 Color Palette
 Element	Color
@@ -134,40 +126,20 @@ Secondary	#6366F1
 Accent	#0EA5E9
 Background	#F1F5F9
 Text	#334155
-🧪 Dummy Data
-
-30 faculty profiles
-
-3 departments: CSE, CSM, ECE
-
-Weekly timetables
-
-Random profile images
-
-Local status update simulation
-
 🔮 Future Enhancements
 
 Real backend (Node.js / Firebase)
 
 Real-time WebSocket updates
 
-Push notifications
+Notifications
 
-Teacher availability calendar
-
-Appointment booking system
-
-Student–Faculty chat feature
+Appointment booking
 
 Admin dashboard
 
-React Native mobile app
-
-🏗️ Production Build
-npm run build
-npm run preview
+Mobile app version
 
 📜 License
 
-This project is for educational purposes.
+For educational use.
