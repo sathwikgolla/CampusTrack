@@ -40,45 +40,45 @@ A comprehensive React-based web application that helps students locate faculty m
 
 ## 📁 Project Structure
 src/
-├─ assets/
-│ └─ images/
-├─ components/
-│ ├─ ui/
-│ │ ├─ Button.jsx
-│ │ ├─ Input.jsx
-│ │ ├─ Card.jsx
-│ │ └─ Toast.jsx
-│ ├─ Navbar.jsx
-│ ├─ FacultyCard.jsx
-│ ├─ DepartmentCard.jsx
-│ ├─ SearchBar.jsx
-│ ├─ StatusBadge.jsx
-│ └─ TimetableTable.jsx
-├─ contexts/
-│ └─ AuthContext.jsx
-├─ data/
-│ └─ facultyData.js
-├─ pages/
-│ ├─ Home.jsx
-│ ├─ Login.jsx
-│ ├─ StudentDashboard.jsx
-│ ├─ SearchFaculty.jsx
-│ ├─ FacultyDetails.jsx
-│ ├─ DepartmentList.jsx
-│ ├─ DepartmentFaculty.jsx
-│ ├─ Settings.jsx
-│ ├─ TeacherLogin.jsx
-│ ├─ TeacherDashboard.jsx
-│ ├─ UpdateStatus.jsx
-│ ├─ TeacherProfile.jsx
-│ └─ Timetable.jsx
-├─ routes/
-│ └─ AppRoutes.jsx
-├─ lib/
-│ └─ utils.js
-├─ App.jsx
-├─ main.jsx
-└─ index.css
+├── assets/
+│   └── images/
+├── components/
+│   ├── ui/
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   ├── Card.jsx
+│   │   └── Toast.jsx
+│   ├── Navbar.jsx
+│   ├── FacultyCard.jsx
+│   ├── DepartmentCard.jsx
+│   ├── SearchBar.jsx
+│   ├── StatusBadge.jsx
+│   └── TimetableTable.jsx
+├── contexts/
+│   └── AuthContext.jsx
+├── data/
+│   └── facultyData.js
+├── pages/
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── StudentDashboard.jsx
+│   ├── SearchFaculty.jsx
+│   ├── FacultyDetails.jsx
+│   ├── DepartmentList.jsx
+│   ├── DepartmentFaculty.jsx
+│   ├── Settings.jsx
+│   ├── TeacherLogin.jsx
+│   ├── TeacherDashboard.jsx
+│   ├── UpdateStatus.jsx
+│   ├── TeacherProfile.jsx
+│   └── Timetable.jsx
+├── routes/
+│   └── AppRoutes.jsx
+├── lib/
+│   └── utils.js
+├── App.jsx
+├── main.jsx
+└── index.css
 
 text
 
