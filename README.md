@@ -1,50 +1,67 @@
-<<<<<<< HEAD
-# CampusTrack - Faculty Finder
+📘 CampusTrack – Faculty Finder
 
-A comprehensive React-based web application for finding and connecting with faculty members across campus departments.
+A comprehensive React-based web application to help students and teachers easily locate faculty members, check their availability, and manage campus-wide interactions.
 
-## Features
+🚀 Features
+👨‍🎓 For Students
 
-### For Students
-- **Student Authentication**: Login with roll number and password
-- **Faculty Search**: Global search across all departments with fuzzy matching
-- **Department Browsing**: Browse faculty by department (CSE, CSM, ECE)
-- **Faculty Details**: View comprehensive faculty information including:
-  - Name, Department, Cabin number
-  - Email and contact information
-  - Today's timetable
-  - Current status (Teaching/Free/In Cabin/On Leave/Unavailable)
-  - Current location
-- **Real-time Status**: See current availability of faculty members
-- **Timetable View**: Access weekly schedules for all faculty
+🔐 Student Authentication (Roll number + password)
 
-### For Teachers
-- **Teacher Authentication**: Login with email and password
-- **Status Management**: Update current status:
-  - "In Cabin"
-  - "In Class"
-  - "On Leave"
-  - "Unavailable"
-- **Location Updates**: Update current location (room number/block)
-- **Class Management**: Update current class or meeting information
-- **Profile Management**: View and manage teacher profile
+🔍 Faculty Search with fuzzy matching across all departments
 
-## Tech Stack
+🏫 Browse by Department (CSE, CSM, ECE)
 
-- **React 18** - UI library
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Router DOM** - Client-side routing
-- **Lucide React** - Icon library
-- **Axios** - HTTP client (for future API integration)
-- **shadcn/UI** - Reusable component library
+👩‍🏫 Faculty Details View including:
 
-## Project Structure
+Name, Department, Cabin number
 
-```
+Contact information
+
+Today’s timetable
+
+Real-time status (Teaching / Free / In Cabin / On Leave / Unavailable)
+
+Current location
+
+⏱️ Real-Time Status Monitoring
+
+📅 Weekly Timetable
+
+👨‍🏫 For Teachers
+
+🔐 Teacher Authentication (Email + password)
+
+✅ Status Management
+
+In Cabin
+
+In Class
+
+On Leave
+
+Unavailable
+
+📍 Location Updates (Room/Block)
+
+📝 Class / Meeting Info Update
+
+👤 Profile Management
+
+📅 Personal Timetable View
+
+🛠️ Tech Stack
+Category	Technology
+UI	React 18
+Build Tool	Vite
+CSS	Tailwind CSS
+Routing	React Router DOM
+Icons	Lucide React
+Components	shadcn/UI
+HTTP	Axios (future use)
+📂 Project Structure
 src/
  ├─ assets/
- │   ├─ images/
+ │   └─ images/
  ├─ components/
  │   ├─ ui/
  │   │   ├─ Button.jsx
@@ -83,323 +100,114 @@ src/
  ├─ App.jsx
  ├─ main.jsx
  └─ index.css
-```
 
-## Installation
+⚙️ Installation
+# Clone the repo
+git clone <your-repo-url>
 
-1. **Clone the repository** (or navigate to the project directory)
+# Install dependencies
+npm install
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+# Start the dev server
+npm run dev
 
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
 
-4. **Open your browser** and navigate to `http://localhost:5173`
+Open http://localhost:5173
+ in your browser.
 
-## Usage
+📌 Usage
+👨‍🎓 Student Login
 
-### Student Login
-- Navigate to `/login`
-- Enter any roll number and password (dummy authentication)
-- Access the student dashboard
+Navigate to /login
 
-### Teacher Login
-- Navigate to `/teacher/login`
-- Enter any email and password (dummy authentication)
-- Access the teacher dashboard
+Enter any roll number + password (dummy auth)
 
-### Features Overview
+Access Student Dashboard
 
-#### Student Features
-- **Dashboard**: View all departments, search faculty, and see quick stats
-- **Search**: Global search across all faculty members
-- **Departments**: Browse faculty by department with filtering options
-- **Faculty Details**: Comprehensive view of faculty information and timetable
-- **Settings**: Manage profile settings
+👨‍🏫 Teacher Login
 
-#### Teacher Features
-- **Dashboard**: Overview of current status and quick actions
-- **Update Status**: Change availability, location, and current class
-- **Profile**: View and manage teacher profile
-- **Timetable**: View personal timetable
+Navigate to /teacher/login
 
-## Color Theme
+Enter any email + password (dummy auth)
 
-The application uses a clean, professional color palette:
+Access Teacher Dashboard
 
-- **Primary**: `#3B82F6` (blue-500)
-- **Secondary**: `#6366F1` (indigo-500)
-- **Accent**: `#0EA5E9` (sky-500)
-- **Background**: `#F1F5F9` (slate-100)
-- **Text**: `#334155` (slate-700)
+🎨 Color Theme
 
-## Dummy Data
+Primary: #3B82F6 (blue-500)
 
-The application includes realistic dummy data for:
-- **30 Faculty Members** (10 per department)
-- **3 Departments**: CSE, CSM, ECE
-- **Weekly Timetables** for each faculty member
-- **Current Status** and location information
+Secondary: #6366F1 (indigo-500)
 
-## API Integration
+Accent: #0EA5E9 (sky-500)
 
-Currently, the application uses dummy data and local state management. For production, you'll need to:
+Background: #F1F5F9 (slate-100)
 
-1. Replace dummy authentication with real API calls
-2. Connect to backend API for faculty data
-3. Implement real-time status updates
-4. Add proper error handling and loading states
+Text: #334155 (slate-700)
 
-## Building for Production
+📊 Dummy Data Included
 
-```bash
+30 Faculty Profiles (10 per department: CSE, CSM, ECE)
+
+Weekly timetables
+
+Real-time status simulation
+
+Random user images via randomuser.me
+
+🔌 API Integration (Future)
+
+To make the app production-ready:
+
+Replace dummy authentication with backend API
+
+Store faculty/status data in database
+
+Add real-time updates (web sockets)
+
+Implement backend error handling
+
+🏗️ Build for Production
 npm run build
-```
 
-The build artifacts will be stored in the `dist/` directory.
 
-## Preview Production Build
+Output will be inside the dist/ folder.
 
-```bash
+Preview production build:
+
 npm run preview
-```
 
-## Development Notes
+🛑 Development Notes
 
-- All authentication is currently dummy-based (accepts any credentials)
-- Faculty data is stored in `src/data/facultyData.js`
-- Status updates are stored in local state (not persisted)
-- Image placeholders use randomuser.me API
-- Toast notifications are used for user feedback
+Authentication is dummy-based
 
-## Future Enhancements
+Status updates are saved locally (not persistent)
 
-- [ ] Real backend API integration
-- [ ] Persistent status updates
-- [ ] Real-time notifications
-- [ ] Advanced filtering options
-- [ ] Faculty availability calendar
-- [ ] Appointment booking system
-- [ ] Email notifications
-- [ ] Mobile app version
+Faculty data stored in src/data/facultyData.js
 
-## License
+Uses Toast for notifications
+
+🔮 Future Enhancements
+
+Backend API integration
+
+Persistent teacher status
+
+Real-time notifications
+
+Advanced filters
+
+Availability calendar
+
+Appointment booking system
+
+Email alerts
+
+Mobile App (React Native)
+
+📜 License
 
 This project is created for educational purposes.
 
-## Support
+❤️ Built With
 
-For issues or questions, please refer to the project documentation or contact the development team.
-
----
-
-**Built with ❤️ using React + Vite + Tailwind CSS**
-
-=======
-# CampusTrack - Faculty Finder
-
-A comprehensive React-based web application for finding and connecting with faculty members across campus departments.
-
-## Features
-
-### For Students
-- **Student Authentication**: Login with roll number and password
-- **Faculty Search**: Global search across all departments with fuzzy matching
-- **Department Browsing**: Browse faculty by department (CSE, CSM, ECE)
-- **Faculty Details**: View comprehensive faculty information including:
-  - Name, Department, Cabin number
-  - Email and contact information
-  - Today's timetable
-  - Current status (Teaching/Free/In Cabin/On Leave/Unavailable)
-  - Current location
-- **Real-time Status**: See current availability of faculty members
-- **Timetable View**: Access weekly schedules for all faculty
-
-### For Teachers
-- **Teacher Authentication**: Login with email and password
-- **Status Management**: Update current status:
-  - "In Cabin"
-  - "In Class"
-  - "On Leave"
-  - "Unavailable"
-- **Location Updates**: Update current location (room number/block)
-- **Class Management**: Update current class or meeting information
-- **Profile Management**: View and manage teacher profile
-
-## Tech Stack
-
-- **React 18** - UI library
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Router DOM** - Client-side routing
-- **Lucide React** - Icon library
-- **Axios** - HTTP client (for future API integration)
-- **shadcn/UI** - Reusable component library
-
-## Project Structure
-
-```
-src/
- ├─ assets/
- │   ├─ images/
- ├─ components/
- │   ├─ ui/
- │   │   ├─ Button.jsx
- │   │   ├─ Input.jsx
- │   │   ├─ Card.jsx
- │   │   └─ Toast.jsx
- │   ├─ Navbar.jsx
- │   ├─ FacultyCard.jsx
- │   ├─ DepartmentCard.jsx
- │   ├─ SearchBar.jsx
- │   ├─ StatusBadge.jsx
- │   └─ TimetableTable.jsx
- ├─ contexts/
- │   └─ AuthContext.jsx
- ├─ data/
- │   └─ facultyData.js
- ├─ pages/
- │   ├─ Home.jsx
- │   ├─ Login.jsx
- │   ├─ StudentDashboard.jsx
- │   ├─ SearchFaculty.jsx
- │   ├─ FacultyDetails.jsx
- │   ├─ DepartmentList.jsx
- │   ├─ DepartmentFaculty.jsx
- │   ├─ Settings.jsx
- │   ├─ TeacherLogin.jsx
- │   ├─ TeacherDashboard.jsx
- │   ├─ UpdateStatus.jsx
- │   ├─ TeacherProfile.jsx
- │   ├─ Timetable.jsx
- │   └─ About.jsx
- ├─ routes/
- │   └─ AppRoutes.jsx
- ├─ lib/
- │   └─ utils.js
- ├─ App.jsx
- ├─ main.jsx
- └─ index.css
-```
-
-## Installation
-
-1. **Clone the repository** (or navigate to the project directory)
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser** and navigate to `http://localhost:5173`
-
-## Usage
-
-### Student Login
-- Navigate to `/login`
-- Enter any roll number and password (dummy authentication)
-- Access the student dashboard
-
-### Teacher Login
-- Navigate to `/teacher/login`
-- Enter any email and password (dummy authentication)
-- Access the teacher dashboard
-
-### Features Overview
-
-#### Student Features
-- **Dashboard**: View all departments, search faculty, and see quick stats
-- **Search**: Global search across all faculty members
-- **Departments**: Browse faculty by department with filtering options
-- **Faculty Details**: Comprehensive view of faculty information and timetable
-- **Settings**: Manage profile settings
-
-#### Teacher Features
-- **Dashboard**: Overview of current status and quick actions
-- **Update Status**: Change availability, location, and current class
-- **Profile**: View and manage teacher profile
-- **Timetable**: View personal timetable
-
-## Color Theme
-
-The application uses a clean, professional color palette:
-
-- **Primary**: `#3B82F6` (blue-500)
-- **Secondary**: `#6366F1` (indigo-500)
-- **Accent**: `#0EA5E9` (sky-500)
-- **Background**: `#F1F5F9` (slate-100)
-- **Text**: `#334155` (slate-700)
-
-## Dummy Data
-
-The application includes realistic dummy data for:
-- **30 Faculty Members** (10 per department)
-- **3 Departments**: CSE, CSM, ECE
-- **Weekly Timetables** for each faculty member
-- **Current Status** and location information
-
-## API Integration
-
-Currently, the application uses dummy data and local state management. For production, you'll need to:
-
-1. Replace dummy authentication with real API calls
-2. Connect to backend API for faculty data
-3. Implement real-time status updates
-4. Add proper error handling and loading states
-
-## Building for Production
-
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
-
-## Preview Production Build
-
-```bash
-npm run preview
-```
-
-## Development Notes
-
-- All authentication is currently dummy-based (accepts any credentials)
-- Faculty data is stored in `src/data/facultyData.js`
-- Status updates are stored in local state (not persisted)
-- Image placeholders use randomuser.me API
-- Toast notifications are used for user feedback
-
-## Future Enhancements
-
-- [ ] Real backend API integration
-- [ ] Persistent status updates
-- [ ] Real-time notifications
-- [ ] Advanced filtering options
-- [ ] Faculty availability calendar
-- [ ] Appointment booking system
-- [ ] Email notifications
-- [ ] Mobile app version
-
-## License
-
-This project is created for educational purposes.
-
-## Support
-
-For issues or questions, please refer to the project documentation or contact the development team.
-
----
-
-**Built with ❤️ using React + Vite + Tailwind CSS**
-
->>>>>>> 999916cca54ef7d165f8357624474a49f9f27ee2
+React + Vite + Tailwind CSS + shadcn/UI
