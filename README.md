@@ -1,64 +1,66 @@
-📘 CampusTrack – Faculty Finder
+CampusTrack – Faculty Finder
 
-A comprehensive React-based web application to help students and teachers easily locate faculty members, check their availability, and manage campus-wide interactions.
+A comprehensive React-based web application that helps students locate faculty members, check real-time availability, and explore department-wise faculty information.
 
 🚀 Features
-👨‍🎓 For Students
+👨‍🎓 Student Features
 
-🔐 Student Authentication (Roll number + password)
+Student login (dummy authentication)
 
-🔍 Faculty Search with fuzzy matching across all departments
+Search faculty across all departments
 
-🏫 Browse by Department (CSE, CSM, ECE)
+View department-wise faculty list
 
-👩‍🏫 Faculty Details View including:
+View faculty details:
 
-Name, Department, Cabin number
+Name, department, cabin number
 
-Contact information
+Email
 
-Today’s timetable
+Phone
 
-Real-time status (Teaching / Free / In Cabin / On Leave / Unavailable)
+Today's timetable
 
-Current location
+Real-time status
 
-⏱️ Real-Time Status Monitoring
+Live location
 
-📅 Weekly Timetable
+Weekly timetable view
 
-👨‍🏫 For Teachers
+Real-time status updates
 
-🔐 Teacher Authentication (Email + password)
+👨‍🏫 Teacher Features
 
-✅ Status Management
+Teacher login (dummy authentication)
+
+Update status:
 
 In Cabin
 
 In Class
 
-On Leave
-
 Unavailable
 
-📍 Location Updates (Room/Block)
+On Leave
 
-📝 Class / Meeting Info Update
+Update current location
 
-👤 Profile Management
+Update ongoing class/meeting
 
-📅 Personal Timetable View
+View personal timetable
+
+Manage profile
 
 🛠️ Tech Stack
-Category	Technology
-UI	React 18
+Layer	Technology
+Frontend	React 18
 Build Tool	Vite
-CSS	Tailwind CSS
+Styling	Tailwind CSS
 Routing	React Router DOM
 Icons	Lucide React
-Components	shadcn/UI
-HTTP	Axios (future use)
-📂 Project Structure
+UI Components	shadcn/ui
+Requests	Axios (future integration)
+📁 Project Structure
 src/
  ├─ assets/
  │   └─ images/
@@ -91,8 +93,7 @@ src/
  │   ├─ TeacherDashboard.jsx
  │   ├─ UpdateStatus.jsx
  │   ├─ TeacherProfile.jsx
- │   ├─ Timetable.jsx
- │   └─ About.jsx
+ │   └─ Timetable.jsx
  ├─ routes/
  │   └─ AppRoutes.jsx
  ├─ lib/
@@ -102,112 +103,71 @@ src/
  └─ index.css
 
 ⚙️ Installation
-# Clone the repo
 git clone <your-repo-url>
-
-# Install dependencies
+cd campus-track-faculty-finder
 npm install
-
-# Start the dev server
 npm run dev
 
 
-Open http://localhost:5173
- in your browser.
+Visit:
 
-📌 Usage
+http://localhost:5173
+
 👨‍🎓 Student Login
 
-Navigate to /login
+Go to /login
 
-Enter any roll number + password (dummy auth)
-
-Access Student Dashboard
+Enter any roll number + any password
+(dummy authentication)
 
 👨‍🏫 Teacher Login
 
-Navigate to /teacher/login
+Go to /teacher/login
 
-Enter any email + password (dummy auth)
+Enter any email + any password
+(dummy authentication)
 
-Access Teacher Dashboard
+🎨 Color Palette
+Element	Color
+Primary	#3B82F6
+Secondary	#6366F1
+Accent	#0EA5E9
+Background	#F1F5F9
+Text	#334155
+🧪 Dummy Data
 
-🎨 Color Theme
+30 faculty profiles
 
-Primary: #3B82F6 (blue-500)
-
-Secondary: #6366F1 (indigo-500)
-
-Accent: #0EA5E9 (sky-500)
-
-Background: #F1F5F9 (slate-100)
-
-Text: #334155 (slate-700)
-
-📊 Dummy Data Included
-
-30 Faculty Profiles (10 per department: CSE, CSM, ECE)
+3 departments: CSE, CSM, ECE
 
 Weekly timetables
 
-Real-time status simulation
+Random profile images
 
-Random user images via randomuser.me
-
-🔌 API Integration (Future)
-
-To make the app production-ready:
-
-Replace dummy authentication with backend API
-
-Store faculty/status data in database
-
-Add real-time updates (web sockets)
-
-Implement backend error handling
-
-🏗️ Build for Production
-npm run build
-
-
-Output will be inside the dist/ folder.
-
-Preview production build:
-
-npm run preview
-
-🛑 Development Notes
-
-Authentication is dummy-based
-
-Status updates are saved locally (not persistent)
-
-Faculty data stored in src/data/facultyData.js
-
-Uses Toast for notifications
+Local status update simulation
 
 🔮 Future Enhancements
 
-Backend API integration
+Real backend (Node.js / Firebase)
 
-Persistent teacher status
+Real-time WebSocket updates
 
-Real-time notifications
+Push notifications
 
-Advanced filters
-
-Availability calendar
+Teacher availability calendar
 
 Appointment booking system
 
-Email alerts
+Student–Faculty chat feature
 
-Mobile App (React Native)
+Admin dashboard
+
+React Native mobile app
+
+🏗️ Production Build
+npm run build
+npm run preview
 
 📜 License
 
-This project is created for educational purposes.
-
-❤️ Built With
-
-React + Vite + Tailwind CSS + shadcn/UI
+This project is for educational purposes.
